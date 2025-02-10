@@ -1,0 +1,43 @@
+.site-footer {
+  background-color: #196469;
+}
+
+.site-footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 22px 18px;
+}
+
+.footer__desc {
+  margin: 0;
+  color: #fff;
+  text-align: right;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 800px) {
+
+  .footer__logo-img {
+    width: 78px;
+    height: 41px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+
+  .footer__logo-img {
+    width: 108px;
+    height: 83px;
+  }
+
+  .footer__desc {
+    font-size: 16px;
+  }
+
+}
+  

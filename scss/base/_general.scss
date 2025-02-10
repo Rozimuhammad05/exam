@@ -1,0 +1,20 @@
+/* GENERAL STYLE BEGIN HERE */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+/* GENERAL STYLE FINISH HERE */
+

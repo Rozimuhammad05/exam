@@ -1,0 +1,231 @@
+/* site header styles begin  */
+
+.list-unstyled {
+  list-style-type: none;
+  margin-block: 0;
+  padding-left: 0;
+}
+
+.site-header {
+  position: relative;
+  z-index: 1;
+  background-color: #2A8086;
+  padding-block: 8px;
+  box-shadow: 0px 1px 10px 0px rgba(18, 87, 91, 0.25);
+}
+
+.site-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__btn {
+  background-image: url("/images/icons/hamburgermenu.svg");
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  content: "";
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.show-menu .site-header__menu-wrap {
+  display: block;
+}
+
+.site-header__menu-wrap {
+  position: absolute;
+  top: 100%;
+  background-color: #2A8086;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  padding-top: 32px;
+  margin-inline: auto;
+  display: none;
+}
+
+.navbar__item {
+  padding-block: 14px;
+}
+
+.navbar__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin-block: 0;
+}
+
+.navbar__link {
+  text-decoration-line: none;
+  color: #F3F7F8;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.site-header__sign-wrap {
+  display: none;
+  align-items: center;
+}
+
+.login-link, .sign-link {
+  display: none;
+}
+
+/* media query styles begin */
+
+@media only screen and (min-width: 640px) {
+  
+  .site-header {
+    padding-block: 20px;
+  }
+  
+}
+
+@media only screen and (min-width: 800px) {
+  
+  .site-header {
+    position: relative;
+    z-index: 1;
+    background-color: #2A8086;
+    padding-block: 20px;
+  }
+  
+  .site-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .site-header__img {
+    width: 78px;
+    height: 41px;
+  }
+  
+  .site-header__btn {
+    display: none;
+  }
+  
+  .site-header__menu-wrap {
+    position: static;
+    top: auto;
+    background-color: #2A8086;
+    width: auto;
+    left: 0;
+    height: auto;
+    padding-top: 0;
+    margin-inline: 0;
+    display: block;
+  }
+  
+  .navbar__list {
+    flex-direction: row;
+    column-gap: 40px;
+  }
+  
+  .navbar__item:nth-child(6) {
+    display: none;
+  }
+  
+  .navbar__link {
+    font-size: 12px;
+  }
+  
+  .first-link {
+    border-bottom: 1px solid #F3F7F8;
+  }
+  
+  .site-header__sign-wrap {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-link {
+    background-image: url("/images/icons/searchicon.svg");
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    margin-right: 31px;
+    background-size: contain;
+  }
+  
+  .account-link {
+    background-image: url("/images/icons/accounticon.svg");
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 46px;
+    background-size: contain;
+  }
+  
+  
+}
+
+@media only screen and (min-width: 1250px) {
+  
+  .site-header__img {
+    width: 108px;
+    height: 83.613px;
+  }
+  
+  .navbar__link {
+    font-family: "Roboto Mono";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  
+  .sign-link{
+    display: flex;
+  }
+  
+  .login-link {
+    display: flex;
+  }
+  
+  .account-link {
+    background-image: none;
+    width: auto;
+  }
+  
+  .login-link {
+    text-decoration-line: none;
+    color: var(--white, #C5E1E5);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-right: 23px;
+  }
+  
+  .sign-link {
+    text-decoration-line: none;
+    color: var(--white, #C5E1E5);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: 1px solid var(--white, #C5E1E5);
+    padding: 16px 14px 15px 14px;
+  }
+}
+
+/* media query styles finish */
+
+/* site header styles finish */
